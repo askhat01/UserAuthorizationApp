@@ -3,5 +3,6 @@
     <string name="authorization_login_hint">Введите логин</string>
     <string name="authorization_password_hint">Введите пароль</string>
     <string name="button_enter">Войти</string>
-    <string name="button_registration">Зарегистрироваться</string>
+    <string name="button_registration">Регистрация</string>
+    <string name="error_login_input">Ошибка ввода данных</string>
 </resources>
