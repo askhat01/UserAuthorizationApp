@@ -5,4 +5,6 @@
     <string name="button_enter">Войти</string>
     <string name="button_registration">Регистрация</string>
     <string name="error_login_input">Ошибка ввода данных</string>
+    <string name="label_user_login">Логин</string>
+    <string name="label_user_password">Пароль</string>
 </resources>

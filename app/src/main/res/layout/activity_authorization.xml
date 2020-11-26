@@ -7,7 +7,7 @@
     tools:context=".AuthorizationActivity">
 
     <EditText
-        android:id="@+id/edit_login"
+        android:id="@+id/edit_login_input"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:hint="@string/authorization_login_hint"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_password_input"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:hint="@string/authorization_password_hint"

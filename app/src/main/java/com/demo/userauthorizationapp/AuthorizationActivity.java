@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.regex.Pattern;
-
 public class AuthorizationActivity extends AppCompatActivity {
 
     private EditText mEtLogin;
@@ -25,8 +23,8 @@ public class AuthorizationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authorization);
 
-        mEtLogin = findViewById(R.id.edit_login);
-        mEtPassword = findViewById(R.id.edit_password);
+        mEtLogin = findViewById(R.id.edit_login_input);
+        mEtPassword = findViewById(R.id.edit_password_input);
         mBtnEnter = findViewById(R.id.button_enter);
         mBtnRegister = findViewById(R.id.button_registration);
 
