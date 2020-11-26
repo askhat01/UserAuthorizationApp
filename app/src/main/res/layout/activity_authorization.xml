@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AuthorizationActivity">
 
     <EditText
         android:id="@+id/edit_login"
@@ -19,6 +19,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:hint="@string/authorization_password_hint"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
