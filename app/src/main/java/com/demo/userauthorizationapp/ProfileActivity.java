@@ -23,6 +23,10 @@ public class ProfileActivity extends AppCompatActivity {
         mUserPassword = findViewById(R.id.edit_user_password);
 
         mUserPhoto.setOnClickListener(mOnPhotoClickListener);
+
+        Bundle bundle = getIntent().getExtras();
+        mUserLogin.setText(bundle.getString(AuthorizationActivity.EXTRA_EMAIL));
+        mUserPassword.setText(bundle.getString(AuthorizationActivity.EXTRA_PASSWORD));
     }
 
     private View.OnClickListener mOnPhotoClickListener = new View.OnClickListener() {
@@ -30,5 +34,5 @@ public class ProfileActivity extends AppCompatActivity {
         public void onClick(View view) {
             //TODO: обраотка нажатия на фото профиля
         }
-    }
+    };
 }

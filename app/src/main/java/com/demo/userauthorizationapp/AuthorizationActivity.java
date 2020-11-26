@@ -3,6 +3,7 @@ package com.demo.userauthorizationapp;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -12,6 +13,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class AuthorizationActivity extends AppCompatActivity {
+
+    public static String EXTRA_EMAIL = "EXTRA_EMAIL";
+    public static String EXTRA_PASSWORD = "EXTRA_PASSWORD";
 
     private EditText mEtLogin;
     private EditText mEtPassword;
@@ -36,7 +40,10 @@ public class AuthorizationActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (isLoginValid() && isPasswordValid()) {
-                // TODO: перейти в профиль пользователя (приложение)
+                Intent startProfileIntent = new Intent(AuthorizationActivity.this, ProfileActivity.class);
+                startProfileIntent.putExtra(EXTRA_EMAIL, mEtLogin.getText().toString());
+                startProfileIntent.putExtra(EXTRA_PASSWORD, mEtPassword.getText().toString());
+                startActivity(startProfileIntent);
             } else {
                 showErrorMessage(R.string.error_login_input);
             }
